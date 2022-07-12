@@ -1,0 +1,24 @@
+nav {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-size: 18px;
+    display: flex;
+    width: 100%;
+    font-family: roboto, arial, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E5E7EB;
+    margin: 5px;
+}
+
+#links {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+#logo {
+    margin-left: 50px;
+    font-weight: bold;
+}
