@@ -1,14 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 nav {
     background-color: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
     display: flex;
-    width: 90%;
+    width: 100%;
     font-family: roboto, arial, sans-serif;
     justify-content: center;
     padding-top: 10px;
     margin: 0 auto;
     height: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 nav a {
@@ -33,11 +41,13 @@ header {
     font-family: roboto, arial, sans-serif;
     display: flex;
     gap: 5px;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     margin: 0 auto;
     height: 500px;
     align-items: center;
+    position: absolute;
+    top: 30px;
 }
 
 header div {
@@ -67,5 +77,57 @@ header div {
 
 #hero-image img {
     width: 100%;
+    height: auto;
+}
+
+#signup {
+    color: #E5E7EB;
+    background-color: #3882f6;
+    width: 90px;
+    height: 20px;
+    line-height: 20px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+#signup a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.main {
+    position: absolute;
+    top: 530px;
+    height: 1000px;
+    width: 100%;
+    font-family: roboto, arial, sans-serif;
+    color: #1F2937;
+}
+
+.main h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.content img {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #3882f6;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.content div {
+    width: 200px;
     height: auto;
 }
