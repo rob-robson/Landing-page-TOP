@@ -3,8 +3,12 @@ nav {
     color: #E5E7EB;
     font-size: 18px;
     display: flex;
-    width: 100%;
+    width: 90%;
     font-family: roboto, arial, sans-serif;
+    justify-content: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    height: 30px;
 }
 
 nav a {
@@ -15,10 +19,53 @@ nav a {
 
 #links {
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 #logo {
-    margin-left: 50px;
+    margin-left: 100px;
     font-weight: bold;
+}
+
+header {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-family: roboto, arial, sans-serif;
+    display: flex;
+    gap: 5px;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+    height: 500px;
+    align-items: center;
+}
+
+header div {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+}
+
+#hero-title {
+    font-size: 48px;
+}
+
+#hero-text {
+    margin-left: 100px;
+    justify-content: left;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+#hero-image {
+    margin-right: 100px;
+    align-content: center;
+    justify-content: center;
+    width: 600px;
+    height: auto;
+}
+
+#hero-image img {
+    width: 100%;
+    height: auto;
 }
