@@ -1,3 +1,8 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -16,12 +21,13 @@ nav {
     height: 30px;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 10;
 }
 
 nav a {
     text-decoration: none;
-    color: #E5E7EB;
+    color: #F9FAF8;
     margin: 5px;
 }
 
@@ -35,7 +41,7 @@ nav a {
     font-weight: bold;
 }
 
-header {
+.header {
     background-color: #1F2937;
     color: #E5E7EB;
     font-family: roboto, arial, sans-serif;
@@ -44,20 +50,22 @@ header {
     width: 100%;
     justify-content: center;
     margin: 0 auto;
-    height: 500px;
+    height: auto;
     align-items: center;
-    position: absolute;
-    top: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
-header div {
+.header div {
     width: 600px;
-    height: 300px;
+    height: auto;
     padding: 10px;
 }
 
 #hero-title {
     font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 800;
 }
 
 #hero-text {
@@ -73,6 +81,7 @@ header div {
     justify-content: center;
     width: 600px;
     height: auto;
+    flex-shrink: 0;
 }
 
 #hero-image img {
@@ -99,9 +108,6 @@ header div {
 }
 
 .main {
-    position: absolute;
-    top: 530px;
-    height: 1000px;
     width: 100%;
     font-family: roboto, arial, sans-serif;
     color: #1F2937;
@@ -110,6 +116,7 @@ header div {
 .main h2 {
     text-align: center;
     font-size: 36px;
+    font-weight: 800;
 }
 
 .content {
@@ -117,6 +124,7 @@ header div {
     justify-content: center;
     gap: 20px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .content img {
@@ -130,4 +138,22 @@ header div {
 .content div {
     width: 200px;
     height: auto;
+}
+
+.quote {
+    width: 800px;
+    font-family: roboto, Arial, sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+#name {
+    text-align: right;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    margin: 0;
 }
